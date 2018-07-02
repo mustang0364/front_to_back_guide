@@ -32,7 +32,10 @@ deleteCompany = (id) => {
 reRender = () => {
   axios.get('/api/company_names')
   .then(res => {
-    this.setState({companyNames: res.data});
+    
+    this.setState({
+      companyNames: res.data
+    })
   }).catch(err => console.log('Axios Get Cities Error-----', err));   
 }
 
@@ -42,6 +45,7 @@ reRender = () => {
     })
   }
  postComment=()=>{
+   console.log(this.state.company, this.state.comment);
    axios.post('/api/post_comment',{company:this.state.company, comment: this.state.comment}).then(response => 
   this.setState({
     companyNames:response.data
@@ -76,7 +80,7 @@ render() {
              deleteCompany={this.deleteCompany} updateComment={this.updateComment} 
              handleChange={this.handleCommentChange}/>
       )})
-    
+      console.log(this.state.companyNames)
   return (
     <div className="App">
 

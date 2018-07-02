@@ -53,14 +53,12 @@ module.exports = {
         //console.log('Edit Body---------', req.body.city);
         const companyIndex = companyNames.findIndex(company => company.id === +id);
        // console.log('companyIndex--------', companyIndex)
-        const updatedCompany = { 
-            id: companyNames[companyIndex].id,
-            company: company,
-            comment: comment
-        }
-        //console.log('Updated City--------', updatedCity);
-        companyNames[companyIndex] = updatedCompany;
-        res.status(200).json(companyNames[companyIndex]);
+      
+          companyNames[companyIndex].company = company
+          companyNames[companyIndex].comment = comment
+        
+        console.log(companyNames);
+        res.status(200).json(companyNames);
     }
 
 

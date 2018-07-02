@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cC = require('../controller/company_controller')
+const cC = require('./controller/company_controller')
 const app = express();
 app.use(bodyParser.json());
 
