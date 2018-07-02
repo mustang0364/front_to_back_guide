@@ -1,8 +1,406 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Wendy+One');
+
+
+
+  body,html{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height: 100vh;
+    
+  }
+  
+  .buildings{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url('https://i.pinimg.com/originals/21/a0/f6/21a0f661e8d751ccf73b8c5a4d86044f.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 0 0;
+    animation: move 100s linear infinite;
+  }
+  
+  
+  .car{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url('https://img.clipartxtras.com/c8ad8ca82d3dfc5f1f61378b000259b8_taxi-png-clipart-download-free-car-images-in-png-taxi-car-drawing_1592-906.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    animation-delay: 1s;
+    animation: moveTwo 20s linear infinite;
+  }
+  .slack{
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    height: 100px;
+    background-image: url('https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    animation-delay: 1s;
+    animation: moveTwo 20.1s linear infinite;
+  }
+  .charger{
+    position: absolute;
+    bottom: 0;
+    width: 150%;
+    height: 100px;
+    background-image: url('https://d30y9cdsu7xlg0.cloudfront.net/png/1502321-200.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    animation-delay: 1s;
+    animation: moveTwo 10s linear infinite;
+    
+  }
+  
+  .motorcycle{
+    position: absolute;
+    bottom: 0;
+    width: 150%;
+    height: 100px;
+    background-image: url('https://logoobject.com/wp-content/uploads/2018/01/Chopper-Motorcycle-Logo-999x999.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    animation-delay: 1s;
+    animation: moveTwo 15s linear infinite;
+  }
+  
+  
+  .krankenwagen{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background-image: url('http://actors9.com/wp-content/uploads/2018/04/splendid-design-inspiration-police-car-clipart-free-clip-art.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    animation-delay: 2s;
+    animation: move 10s linear infinite;
+   
+  }
+  .porsche{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background-image: url('http://www.iconninja.com/files/545/544/969/sportcar-vehicle-automobile-auto-car-icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    animation-delay: 7s;
+    animation: move 5.1s linear infinite;
+   
+  }
+  .whatup{
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    height: 100px;
+    background-image: url('http://www.limatastytours.com/wp-content/uploads/2017/08/Whatsapp-Vector-Logo-2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    animation-delay: 7s;
+    animation: move 5.1s linear infinite;
+   
+  }
+  
+  .sky{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 100px;
+    background-image: url('http://www.onlygfx.com/wp-content/uploads/2017/04/watercolor-cloud-4-6.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    animation: moveTwo 30s linear infinite;
+    
+   
+  }
+  .sky1{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 100px;
+    background-image: url('http://www.onlygfx.com/wp-content/uploads/2017/04/watercolor-cloud-4-6.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    animation: moveTwo 40s linear infinite;
+  }
+  .sky2{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 75px;
+    background-image: url('http://www.onlygfx.com/wp-content/uploads/2017/04/watercolor-cloud-4-6.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    animation: move 30s linear infinite;
+  }
+  .plane{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height:300px;
+    background-image: url('https://logoobject.com/wp-content/uploads/edd/2017/09/Plane-Logo-Png.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    animation: move 30s linear infinite;
+  }
+  .cloud{
+    position: absolute;
+    top: 40px;
+    width: 75%;
+    height: 75px;
+    background-image: url('https://techstockinsider.com/wp-content/uploads/2018/04/salesforce.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    animation: moveTwo 40s linear infinite;
+  }
+  
+    
+  .birds{
+    position: absolute;
+    top: 10px;
+    width: 50%;
+    height: 90px;
+    background-image: url("http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    animation: move 15s linear infinite;
+    
+
+  }
+  .sun{
+    
+    top: 30px;
+    bottom: 80px;
+    width: 90%;
+    height: 300px;
+    background-image: url("http://www.iconsplace.com/download/yellow-sun-512.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    
+    
+
+  }
+  
+  
+  
+
+  
+  .birds2{
+    position: absolute;
+    top: 10px;
+    width: 50%;
+    height: 90px;
+    background-image: url("https://cdn.worldvectorlogo.com/logos/twitter-5.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    animation: moveTwo 15s linear infinite;
+    
+
+  }
+  
+  
+  @keyframes move{
+    from{ background-position: -1000px 0;}
+    to{ background-position: 1000px 0;}
+  }
+  
+  @keyframes moveTwo{
+    from{ background-position: 2000px 0;}
+    to{ background-position: -1000px 0;}
+  };
+
+
+  .postcomment:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 4px;
+    background: linear-gradient(120deg, #00F260, #0575E6, #00F260);
+    background-size: 300% 300%;
+    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  
+  .postcomment.in:after {
+    animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
+  }
+  
+  /* motion */
+  @keyframes gradient-animation {
+    0% {
+      background-position: 15% 0%;
+    }
+    50% {
+      background-position: 85% 100%;
+    }
+    100% {
+      background-position: 15% 0%;
+    }
+  }
+  
+  @keyframes frame-enter {
+    0% {
+      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+    25% {
+      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+    50% {
+      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, 100% 0%, 0% 0%);
+    }
+    75% {
+      -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 0%, 0% 0%);
+    }
+    100% {
+      -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 0% 100%);
+    }
+
+}
+
+.postcomment{
+  position: relative;
+  }
+  
+  .postcomment:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 4px;
+    background: linear-gradient(120deg, #00F260, #0575E6, #00F260);
+    background-size: 300% 300%;
+    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  
+  .postcomment.in:after {
+    animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
+  }
+  
+  /* motion */
+  @keyframes gradient-animation {
+    0% {
+      background-position: 15% 0%;
+    }
+    50% {
+      background-position: 85% 100%;
+    }
+    100% {
+      background-position: 15% 0%;
+    }
+  }
+  
+  @keyframes frame-enter {
+    0% {
+      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+    25% {
+      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+    50% {
+      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, 100% 0%, 0% 0%);
+    }
+    75% {
+      -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 0%, 0% 0%);
+    }
+    100% {
+      -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 0% 100%);
+    }
+
+}
+
+
+.App  {
   text-align: center;
+  
+  
+  color:blue;
+  font-size: 30px;
+
+  font-family: 'Wendy One', sans-serif;
+  
+} 
+
+  .animated-box {
+    position: relative;
+  }
+  
+  .animated-box:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 4px;
+    background: linear-gradient(120deg, #00F260, #0575E6, #00F260);
+    background-size: 300% 300%;
+    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  
+  .animated-box.in:after {
+    animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
+  }
+  
+  /* motion */
+  @keyframes gradient-animation {
+    0% {
+      background-position: 15% 0%;
+    }
+    50% {
+      background-position: 85% 100%;
+    }
+    100% {
+      background-position: 15% 0%;
+    }
+  }
+  
+  @keyframes frame-enter {
+    0% {
+      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+    25% {
+      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+    50% {
+      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, 100% 0%, 0% 0%);
+    }
+    75% {
+      -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 0%, 0% 0%);
+    }
+    100% {
+      -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 0% 100%);
+    }
+  
+
+  
+  
 }
 
 
-.customer-name {
-  color: green;
-}
+
