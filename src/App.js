@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-
+import News from './components/News';
+import Video from './components/Video'
 import CompanyContainer from './components/CompanyContainer';
 import './App.css';
 
@@ -75,32 +76,33 @@ render() {
    
     let names = this.state.companyNames.map(company => {
       return (
+     
       
       <CompanyContainer key={company.id} company={company} reRender={this.reRender}
              deleteCompany={this.deleteCompany} updateComment={this.updateComment} 
              handleChange={this.handleCommentChange}/>
       )})
       console.log(this.state.companyNames)
+     
   return (
+    
     <div className="App">
-
+     <News/>
+     
+    <Video/>
+    
         <p>Silicon Valley</p>
-
-      <button className="animated-box in" onClick={() => this.getUserInfo}>Yellow Pages</button> 
+          <button className="animated-box in" onClick={() => this.getUserInfo}>Yellow Pages</button> 
                 
-    
-    
-      
-
-  <div>
-    <select onChange= {(e)=> this.selectCompany(e.target.value)}>
-          <option className="twitter"> Twitter</option> 
-          <option className="facebook">Facebook</option>    
-          <option className="salesForce">SalesForce </option>
-          <option className="youtube">Youtube</option> 
-          <option className="Instagram">Instagram</option>
-          <option className="Pinterest">Pinterest</option>
-          <option className="Tesla">Tesla</option>
+   <div>
+      <select onChange= {(e)=> this.selectCompany(e.target.value)}>
+              <option className="twitter"> Twitter</option> 
+              <option className="facebook">Facebook</option>    
+              <option className="salesForce">SalesForce </option>
+              <option className="youtube">Youtube</option> 
+              <option className="Instagram">Instagram</option>
+              <option className="Pinterest">Pinterest</option>
+              <option className="Tesla">Tesla</option>
 
     </select>  
   </div>
@@ -117,23 +119,8 @@ render() {
       <textarea className="textArea" onChange={(e)=>this.changeHandler(e.target.value)}></textarea>
     <div>
       <div>{names}</div>
-      <div className="buildings">
-      <div className="sky"></div>
-      <div className="sky1"></div>
-      <div className="sky2"></div>
-      <div className="cloud"></div>
-      <div className="car"></div>
-      <div className="porsche"></div>
-      <div className="birds"></div>
-      <div className="birds2"></div>
-      <div className="plane"></div>
-      <div className="motorcycle"></div>
-      <div className="whatup"></div>
-      <div className="krankenwagen"></div>
-      <div className="charger"></div>
-      <div className="sun"></div>
-      <div className="slack"></div>
-    </div>
+     
+
     </div>
 </div>
 )    

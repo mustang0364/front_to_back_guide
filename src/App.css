@@ -346,6 +346,13 @@
   
 } 
 
+video {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  z-index: 100;
+}
+
   .animated-box {
     position: relative;
   }
